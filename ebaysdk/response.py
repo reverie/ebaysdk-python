@@ -62,7 +62,7 @@ class ResponseDataObject(object):
             elif isinstance(a[1], list):
                 objs = []
                 for i in a[1]:
-                    if i is None or isinstance(i, str) or isinstance(i, unicode):
+                    if i is None or isinstance(i, str):
                         objs.append(i)
                     else:
                         objs.append(ResponseDataObject(i, datetime_nodes))
